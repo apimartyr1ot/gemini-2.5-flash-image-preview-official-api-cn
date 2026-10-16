@@ -38,10 +38,9 @@ Endpoint: `POST https://api.apimart.ai/v1/images/generations` (OpenAI-compatible
 <!-- pricing:model:start -->
 | Output | List price | Effective price |
 | --- | --- | --- |
-| default | $0.0375 | $0.03 |
-| 4K | $0.05 | $0.04 |
+| per generated second | — | see the live pricing page |
 
-The token-billed official route bills per million tokens instead: `text_input` $1.60, `cached_text_input` free, `image_input` $1.60, `cached_image_input` free, `text_output` $9.60, `image_output` $96.00.
+Token rates (effective): `text_input` $0.24/M, `image_input` $0.24/M, `text_output` $2/M, `image_output` $24/M.
 <!-- pricing:model:end -->
 
 Prices are a snapshot; the [pricing page](https://go.apimart.ai/k-968490) and [`data/model.json`](data/model.json) are refreshed by CI, and a completed task reports the exact amount in its `cost` field.
@@ -102,6 +101,15 @@ token-billed: `text_input` $0.24/M, `image_input` $0.24/M, `text_output` $2/M, `
 **How do I get a key?**
 
 Use the [Get an API key](https://go.apimart.ai/k-f077c1) link — $1 minimum top-up, no plan required.
+
+<!-- related-repos:auto -->
+## Related repositories
+
+- **More models in this language** — [midjourney-api-cn](https://github.com/apimartycl6k972t/midjourney-api-cn) · [gemini-2-5-flash-image-preview-api-cn](https://github.com/hm-5j/gemini-2-5-flash-image-preview-api-cn) · [nano-banana-api-cn](https://github.com/mpflv/nano-banana-api-cn) · [gemini-3-1-flash-image-preview-api-cn](https://github.com/utp00/gemini-3-1-flash-image-preview-api-cn) · [nano-banana-2-api-cn](https://github.com/i3hxnu6/nano-banana-2-api-cn) · [gemini-3-pro-image-preview-api-cn](https://github.com/vd0tv42d/gemini-3-pro-image-preview-api-cn)
+- **Topic hubs** — every build of this model, all languages: [gemini-2.5-flash-image-preview-official](https://github.com/topics/gemini-2.5-flash-image-preview-official) · [gemini-2.5-flash-image-preview-official-api](https://github.com/topics/gemini-2.5-flash-image-preview-official-api)
+
+This repository is one build in a cross-linked set of API guides for the same model family; each language build links back to the others.
+<!-- /related-repos:auto -->
 
 ## Attributed links (how this repository is measured)
 
